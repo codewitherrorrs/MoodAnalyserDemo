@@ -9,9 +9,9 @@ namespace MoodTest
         public void Mood_Success()
         {
             //Arrange
-            string h = "Happy";
+            string h = "Sad";
             MoodAnalyser m1 = new MoodAnalyser();
-            string expectedOutput = "HAPPY";
+            string expectedOutput = "SAD";
 
             //Act 
             string actualOutput = m1.Mood(h);
