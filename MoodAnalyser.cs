@@ -11,10 +11,14 @@ namespace MoodAnalyserDemo
         string mood; 
        public void MoodException(string mood) 
         {
-            if(mood == null || mood == "") 
+            if(mood == null) 
             {
                 Console.WriteLine("Invalid Mood");
                // throw new Exception("Invalid Mood Found Exception");
+            }
+            else if(mood == "")
+            {
+                throw new Exception("Invalid Empty Mood Found Exception");
             }
             else if(mood == "Happy" || mood == "happy")
             {
