@@ -8,16 +8,34 @@ namespace MoodAnalyserDemo
 {
     public class MoodAnalyser
     {
-        public string n;
-        public MoodAnalyser(string name) 
+        public void ErrorFun()
         {
-            this.n = name;
-            Console.WriteLine(n);   
-        }
-       
-        public string mood()
-        {
-            return this.n;
+
+            Console.WriteLine("Enter the Mood Happy or Sad: ");
+            string mood = Console.ReadLine();
+            try
+            {
+                if (mood == "Happy")
+                {
+                    Console.WriteLine("Happy");
+                }
+                else if (mood == "Sad")
+                {
+                    Console.WriteLine("Sad");
+                }
+                else if (mood == null)
+                {
+                    Console.WriteLine("HAPPY");
+                }
+                else
+                {
+                    throw new Exception();
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
         }
     }
 }
