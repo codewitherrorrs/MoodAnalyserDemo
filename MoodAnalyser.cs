@@ -8,10 +8,11 @@ namespace MoodAnalyserDemo
 {
     public class MoodAnalyser
     {
-       public MoodAnalyser(string mood) 
+     /*  public MoodAnalyser(string mood) 
         {
             Console.WriteLine(mood);
         }
+     */
     }
 
    

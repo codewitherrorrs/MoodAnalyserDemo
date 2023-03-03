@@ -8,7 +8,8 @@ namespace MoodAnalyserDemo
        
         public static void Main(string[] args)
         {
-           Console.WriteLine("Enter the Mood : ");
+          
+         /* Console.WriteLine("Enter the Mood : ");
             string mood = Console.ReadLine();
             MoodAnalyser m1 = new MoodAnalyser(mood);
 
@@ -17,7 +18,7 @@ namespace MoodAnalyserDemo
             foreach (ConstructorInfo info2 in info)
             {
                 Console.WriteLine(info2.Name);
-            }
+            } */
                
          /* try
             {
