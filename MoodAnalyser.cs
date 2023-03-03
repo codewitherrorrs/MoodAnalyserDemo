@@ -8,15 +8,28 @@ namespace MoodAnalyserDemo
 {
     public class MoodAnalyser
     {
-        public string check(string mood)
+        public void check(string mood)
         {
-            if (mood == "Happy" | mood == "happy")
+            if (mood == null)
             {
-                return mood;
+                throw new Exception("No Such Class Error");
             }
-            else 
-            { 
-                return mood; 
+            /*  else if(mood == "")
+              {
+                  throw new Exception("No Such Method Error");
+              }
+            */
+            else if (mood == "Happy" | mood == "happy")
+            {
+                Console.WriteLine("Happy");
+            }
+            else if (mood == "Sad" | mood == "sad")
+            {
+                Console.WriteLine("Sad");
+            }
+            else
+            {
+                Console.WriteLine(mood);
             }
         }
     }
