@@ -10,7 +10,7 @@ namespace RelectionUnitTest
             //Arrange
             string mood = "";
             MoodAnalyser m1 = new MoodAnalyser();
-            string expectedOutput = "No Such Class Error";
+            string expectedOutput = "No Such Method Error";
 
             //Act
             string actualOutput = m1.check(mood);
