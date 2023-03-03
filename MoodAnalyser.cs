@@ -8,9 +8,16 @@ namespace MoodAnalyserDemo
 {
     public class MoodAnalyser
     {
-        public void check(string mood)
+        public string check(string mood)
         {
-            Console.WriteLine("Mood : " + mood);
+            if (mood == "Happy" | mood == "happy")
+            {
+                return mood;
+            }
+            else 
+            { 
+                return mood; 
+            }
         }
     }
 
